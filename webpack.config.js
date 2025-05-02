@@ -1,13 +1,16 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/App.js",
+  entry: "./src/App.web.js", // 👈 make sure it points to web version
   mode: "production",
 
   output: {
     path: path.resolve("dist"),
     filename: "main.js",
     libraryTarget: "commonjs",
+  },
+  resolve: {
+    extensions: [".web.js", ".js", ".jsx", ".json"], // 👈 optional but good practice
   },
   module: {
     rules: [

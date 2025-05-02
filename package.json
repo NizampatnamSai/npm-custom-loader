@@ -1,9 +1,17 @@
 {
   "name": "nsaicustomloader",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "",
   "main": "dist/main.js",
   "react-native": "src/App.native.js",
+  "homepage": "https://github.com/NizampatnamSai/npm-custom-loader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NizampatnamSai/npm-custom-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NizampatnamSai/npm-custom-loader/issues"
+  },
   "exports": {
     ".": {
       "import": "./dist/main.js",
@@ -18,7 +26,18 @@
     "build": "webpack",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "react-native",
+    "loader",
+    "spinner",
+    "skeleton",
+    "custom-loader",
+    "loading",
+    "animation",
+    "ui",
+    "components"
+  ],
   "author": "Nizampatnam Sai",
   "license": "ISC",
   "dependencies": {
